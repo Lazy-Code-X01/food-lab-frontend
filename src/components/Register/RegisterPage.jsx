@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import SignUpPageImage from '../../assets/SignUpPage.png'; 
+import SignUpImage from '../../assets/SignUpPage.png';
 import './RegisterPage.css'; 
 import toast from 'react-hot-toast';
 import { API_BASE_URL } from '../../env';
@@ -30,7 +30,7 @@ const RegisterPage = () => {
     }
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/api/users/register', {
+      const response = await axios.post(`${API_BASE_URL}/api/users/register`, {
         firstName,
         lastName,
         phone: phoneNumber,
@@ -179,7 +179,7 @@ return (
       )}
     </div>
     <div className="register-image hidden md:block">
-      <img src={SignUpPageImage} alt="SignUpPage" className="rounded-2xl" />
+      <img src={SignUpImage} alt="SignUpPage" className="rounded-2xl" />
     </div>
   </div>
 );

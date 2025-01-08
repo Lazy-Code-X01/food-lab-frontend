@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
     "build:css": "tailwindcss build src/styles/tailwind.css -o public/styles.css"
   },
