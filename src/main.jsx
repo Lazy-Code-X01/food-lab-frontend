@@ -5,7 +5,7 @@ import App from './App.jsx';
 import { BrowserRouter } from 'react-router-dom';
 import StoreContextProvider from './context/StoreContext.jsx';
 import { CartProvider } from './context/CartContext';
-import { AuthProvider } from './context/AuthContext.jsx'; // Import AuthProvider
+import { AuthProvider } from './context/AuthContext.jsx';
 import { Toaster } from 'react-hot-toast';
 
 const root = createRoot(document.getElementById('root'));

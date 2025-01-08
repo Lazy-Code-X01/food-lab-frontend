@@ -1,5 +1,5 @@
 import React from 'react';
-import Delivery from '../../assets/delivery.png';
+import Delivery from '../../assets/Delivery.png';
 import 'material-design-icons/iconfont/material-icons.css';
 
 const AboutBody = () => {
